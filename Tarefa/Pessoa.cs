@@ -48,12 +48,5 @@ namespace Tarefa
         {
             return Telefone;
         }
-
-
-
-
-
-
-
     }
 }
