@@ -3,5 +3,5 @@ using Tarefa;
 
 Console.WriteLine("Hello, World!");
 
-Pessoa p1 = new Pessoa("Izabelli", "16981605789", 1);
+Cliente p1 = new Cliente("Izabelli", "16981605789", 1);
 Console.WriteLine(p1.getNome() + " " + p1.getTelefone() + " " + p1.getId());
