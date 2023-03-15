@@ -17,7 +17,7 @@ Endereco e1 = new Endereco(
 Cliente c1 = new Cliente(1, "Felipe", "54789000", e1);
 Cliente c2 = new Cliente(2, "Fernanda", "789446985", e1);
 Cliente c3 = new Cliente(3, "Mateus", "145621317", e1);
-Cliente c4 = new Cliente(4, "Felipe", "231874663", e1);
+Cliente c4 = new Cliente(4, "Helen", "231874663", e1);
 
 Console.WriteLine(c1.getEndereco().getRua());
 c1.getEndereco().setRua("Prudente de Moraes");
@@ -49,4 +49,20 @@ Console.WriteLine(c1.getEndereco().EnderecoCompleto());
 
 Console.WriteLine(aviao.ExibirDados());
 Console.WriteLine(car.ExibirDados());
+
+List<Veiculos> listaVeiculos = new List<Veiculos>();
+listaVeiculos.Add(aviao);
+listaVeiculos.Add(car);
+listaVeiculos.Add(bicicleta);
+
+List<Cliente> listaCliente = new List<Cliente>();
+listaCliente.Add(c1);
+listaCliente.Add(c2);
+listaCliente.Add(c3);
+listaCliente.Add(c4);
+
+foreach (Cliente item in listaCliente)
+{
+    Console.WriteLine(item.getNome());
+}
 
