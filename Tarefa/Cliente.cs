@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32.SafeHandles;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,12 +12,24 @@ namespace Tarefa
         public int Id;
         public string Nome;
         public string Telefone;
+        private Endereco Endereco;
 
-        public Cliente(string nome, string telefone, int id)
+        public Cliente(int id, string nome, string telefone, Endereco endereco)
         {
             Id = id;
             Nome = nome;
             Telefone = telefone;
+            Endereco = endereco;
+        }
+
+        public void setEndereco(Endereco endereco)
+        {
+            Endereco = endereco;
+        }
+
+        public Endereco getEndereco()
+        {
+            return Endereco;
         }
 
         public void setId(int id)

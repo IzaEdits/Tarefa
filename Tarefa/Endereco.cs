@@ -25,6 +25,21 @@ namespace Tarefa
             Estado = estado;
         }
 
+        public string getEnderecoCompleto()
+        {
+            return Rua + " " + Numero + " ," + Bairro + " " + Cidade + " " + Estado;
+        }
+
+        public string EnderecoCompleto()
+        {
+            return Rua + " " + Numero + " " + Bairro + " " + Cidade + " " + Estado;
+        }
+
+        public string EnderecoCurto()
+        {
+            return Rua + " " + Numero;
+        }
+
         public void setRua(string rua)
         {
             Rua = rua;
